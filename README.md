@@ -99,3 +99,23 @@ No object-oriented approach is necessary for this task.
 
 [checkerboard.php](checkerboard.php)  
 [localhost:8000/checkerboard.php](http://localhost:8000/checkerboard.php?width=800&height=800&fieldWidth=50)  
+
+# 5.)
+Write a minimalistic backup solution.
+You need a shell script (sh or bash) which archives the directories /var/www/applicant and
+/var/www/test together with their contents into a tar.bz2 file. The archive should contain the current
+date in the name and be stored in the directory /mnt/backuptest. This directory will only contain
+your backup files, but since the disk space is limited, there should never be more than 5 files here - so
+if the 6th file is added, the script should delete the oldest one.
+The script should be executed daily at 1:15 at night - how do you realize this?
+
+create dirs to backup  
+```bash
+mkdir /var/www/test
+mkdir /var/www/applicant
+```
+[backup script](backup_script.sh)
+set daily exe at 1:15
+```bash
+    (echo "15 1 * * * /var/www/html/backup_script.sh") | crontab -u root -
+```  
