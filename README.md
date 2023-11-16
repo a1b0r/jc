@@ -25,3 +25,6 @@ FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 ```
 or lazy via [PMA](http://localhost:8080/index.php) or any other GUI
+## B
+Develop a query which results in the columns title, the amount of hits per job, the point in time
+where the first and the point in time where the last access occurred.
