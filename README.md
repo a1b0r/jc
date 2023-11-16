@@ -82,3 +82,10 @@ GROUP BY j.job_title;
 | Mechatroniker       |    1 | 2021-01-01 13:37:00 | 2021-01-01 13:37:00 |
 | Sachbearbeiter      |    1 | 2021-08-15 00:47:11 | 2021-08-15 00:47:11 |
 | Verkufer (m/w)      |    3 | 2021-05-11 07:10:10 | 2021-06-20 21:53:34 |
+
+# 2.)
+
+Describe briefly in your own words which risks come up when you have to work with
+
+Most prominent would be Injections, unauthorised data access, data coruption/manipulations and DoS.  
+Never trust raw user input, sanatize and validate it, parameterized queries, stored procedures or atleas Escape and encode should be impemented
