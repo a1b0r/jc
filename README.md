@@ -6,7 +6,8 @@ Put the data from the file into a mySQL-table and describe how you accomplished 
 prep envierment to run on:
 ```bash
 docker compose -f "docker-compose.yml" up -d --build 
-```
+```  
+
 ```SQL
 CREATE DATABASE JC;
 USE JC;
@@ -89,6 +90,28 @@ Describe briefly in your own words which risks come up when you have to work wit
 
 Most prominent would be Injections, unauthorised data access, data coruption/manipulations and DoS.  
 Never trust raw user input, sanatize and validate it, parameterized queries, stored procedures or atleas Escape and encode should be impemented
+# 3.)
+### a) 
+"According to a researcher at Cambridge University, it doesn't matter in what order the letters in a
+word are, the only important thing is that the first and last letter be at the right place. The rest can
+be a total mess and you can still read it without problem. This is because the human mind does not
+read every letter by itself but the word as a whole."
+"Aoccdrnig to a rearsehcer at Cmabrigde Uinervtisy, it deosn't mttaer in waht oredr the ltteers in a
+wrod are, the olny iprmoetnt tihng is taht the frist and lsat ltteer be at the rghit pclae. The rset can
+be a toatl mses and you can sitll raed it wouthit porbelm. Tihs is bcuseae the huamn mnid deos not
+raed ervey lteter by istlef, but the wrod as a wlohe."
+Write a php class, that changes strings like in the example given.
+Write a HTML form that uses said class with the help of an ajax-request to scramble the text.
+
+The visual design of the form is of no relevance, the solution should be minimalistic but well-
+structured and elegant.
+
+### b) 
+Bonus: write the algorithm in such a way that the scrambling is reversible and provide that
+functionality in the same form.
+
+[typoglycemia.php](typoglycemia.php)  
+[test it](http://localhost:8000/typoglycemia.php)
 
 # 4.)
 7.2 & gd aint friends, using 7.4  
@@ -98,7 +121,7 @@ should be passed via GET parameters.
 No object-oriented approach is necessary for this task.
 
 [checkerboard.php](checkerboard.php)  
-[localhost:8000/checkerboard.php](http://localhost:8000/checkerboard.php?width=800&height=800&fieldWidth=50)  
+[test it](http://localhost:8000/checkerboard.php?width=800&height=800&fieldWidth=50)  
 
 # 5.)
 Write a minimalistic backup solution.
@@ -115,7 +138,7 @@ mkdir /var/www/test
 mkdir /var/www/applicant
 ```
 [backup script](backup_script.sh)
-set daily exe at 1:15
+to set it exe on host
 ```bash
     (echo "15 1 * * * /var/www/html/backup_script.sh") | crontab -u root -
 ```  
