@@ -89,3 +89,13 @@ Describe briefly in your own words which risks come up when you have to work wit
 
 Most prominent would be Injections, unauthorised data access, data coruption/manipulations and DoS.  
 Never trust raw user input, sanatize and validate it, parameterized queries, stored procedures or atleas Escape and encode should be impemented
+
+# 4.)
+7.2 & gd aint friends, using 7.4  
+Write a PHP file that outputs a PNG image with a checkerboard pattern using the GD library. The
+width (width) and height (height) of the image as well as the side length of the fields (fieldWidth)
+should be passed via GET parameters.
+No object-oriented approach is necessary for this task.
+
+[checkerboard.php](checkerboard.php)  
+[localhost:8000/checkerboard.php](http://localhost:8000/checkerboard.php?width=800&height=800&fieldWidth=50)  
